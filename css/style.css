@@ -1,0 +1,86 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* containers */
+main{
+    width: 80%;
+    margin: auto;
+}
+
+main #prd-container{
+    margin: 1em;
+    display: inline-block;
+    width: calc(100%/3)-3em;
+    height: 400px;
+    position: relative;
+}
+
+
+
+/* image css */
+img{
+    position: relative;
+    height: 80%;
+    width: auto;
+}
+
+img+.prd-info{
+    height: 15%;
+}
+
+#brand {
+    font-size: smaller;
+}
+
+#prd{
+    font-weight: bold;
+
+}
+
+
+/* bottom info */
+span{
+    margin-right: 1em;
+    font-size: smaller;
+}
+
+span#discount {
+    color: red;
+}
+
+span#original{
+    text-decoration: line-through;
+}
+
+#price > span::after{
+    content: '€';
+    margin-left: .2em;
+}
+
+span{
+    display: inline-block;
+}
+/* item on image */
+#dis-value{
+    position: absolute;
+    top: 70%;
+}
+
+#left{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    padding: .2em .5em;
+}
+
+#right{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    padding: .2em .5em;
+}
