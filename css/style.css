@@ -7,8 +7,8 @@
 /* containers */
 article{
     float: left;
-    width: calc((100%/3)-1em);
-    height: 700px;
+    width: calc(100%/3);
+    height: auto;
 
 }
 
@@ -74,14 +74,14 @@ span.original{
 /* item on image */
 .dis-value{
     position: absolute;
-    top: 70%;
+    top: 80%;
 }
 
 .dis-percent{
     background-color: red;
     color: white;
     font-weight: bold;
-    font-size: 1em;
+    font-size: .6em;
     padding: .2em .5em;
 }
 
@@ -89,7 +89,7 @@ span.original{
     background-color: green;
     color: white;
     font-weight: bold;
-    font-size: 1em;
+    font-size: .6em;
     padding: .2em .5em;
 }
 
