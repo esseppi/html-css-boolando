@@ -5,16 +5,21 @@
 }
 
 /* containers */
+article{
+    float: left;
+    width: calc((100%/3)-1em);
+    height: 700px;
+
+}
+
 main{
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
-main #prd-container{
+main .prd-container{
     margin: 1em;
-    display: inline-block;
-    width: calc(100%/3)-3em;
-    height: 400px;
+    height: 100%;
     position: relative;
 }
 
@@ -22,20 +27,24 @@ main #prd-container{
 
 /* image css */
 img{
+    width: 100%;
     position: relative;
     height: 80%;
-    width: auto;
+}
+
+.second{
+    display:none;
 }
 
 img+.prd-info{
     height: 15%;
 }
 
-#brand {
+.brand {
     font-size: smaller;
 }
 
-#prd{
+.prd{
     font-weight: bold;
 
 }
@@ -43,44 +52,63 @@ img+.prd-info{
 
 /* bottom info */
 span{
+    display: inline-block;
     margin-right: 1em;
     font-size: smaller;
 }
 
-span#discount {
+span.discount {
     color: red;
 }
 
-span#original{
+span.original{
     text-decoration: line-through;
 }
 
-#price > span::after{
+.price > span::after{
     content: '€';
     margin-left: .2em;
 }
 
-span{
-    display: inline-block;
-}
+
 /* item on image */
-#dis-value{
+.dis-value{
     position: absolute;
     top: 70%;
 }
 
-#left{
+.dis-percent{
     background-color: red;
     color: white;
     font-weight: bold;
-    font-size: small;
+    font-size: 1em;
     padding: .2em .5em;
 }
 
-#right{
+.dis-tag{
     background-color: green;
     color: white;
     font-weight: bold;
-    font-size: small;
+    font-size: 1em;
     padding: .2em .5em;
+}
+
+.dis-heart{
+    padding: .5em;
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
+
+/* HOVER EFFECT */
+
+.prd-container:hover .first{
+    display: none;
+    
+}
+
+.prd-container:hover .second{
+    display: inline-block;
+    
 }
