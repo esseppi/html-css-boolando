@@ -1,46 +1,109 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
+
 
 /* containers */
-article{
-    float: left;
-    width: calc(100%/3);
-    height: auto;
-
-}
-
 main{
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
-main .prd-container{
-    margin: 1em;
-    height: 100%;
+.row{
     position: relative;
-}
-
-
-
-/* image css */
-img{
+    height: 500px;
     width: 100%;
+    margin: 2em 0;
+    
+}
+
+
+
+.prd-container{
     position: relative;
-    height: 80%;
+    height: 90%;
+  
+
 }
 
+.prd-info{
+    height: 10%;
+    line-height: 100%;
+    
+    
+}
+
+article{
+    float: left;
+    height: 100%;
+    width: calc((100%/3)-1rem);
+    margin: 0 1rem;
+}
+
+
+
+
+
+
+/* HOOVER EFFECT */
+.prd-container img {
+    height: 100%;
+}
+.prd-container:hover .first{
+    display: none;
+    
+}
+.prd-container:hover .second{
+    display: inline-block;
+}
 .second{
-    display:none;
+    display: none;
 }
 
-img+.prd-info{
-    height: 15%;
+/* item on image */
+.dis-value{
+    position: absolute;
+    top: 90%;
 }
 
+.dis-percent{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: .8em;
+    padding: .2em .5em;
+}
+
+.dis-tag{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: .8em;
+    padding: .2em .5em;
+}
+
+.dis-heart{
+    vertical-align: middle;
+    text-align: center;
+    height: 1.5em;
+    width: 1.5em;
+    line-height: 1.5em;
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
+
+.prd-container:hover .dis-heart{
+    color: red;
+
+}
+
+/* bottom info */
 .brand {
+    margin-top: .5em;
     font-size: smaller;
 }
 
@@ -49,8 +112,6 @@ img+.prd-info{
 
 }
 
-
-/* bottom info */
 span{
     display: inline-block;
     margin-right: 1em;
@@ -69,45 +130,3 @@ span.original{
     content: '€';
     margin-left: .2em;
 }
-
-
-/* item on image */
-.dis-value{
-    position: absolute;
-    top: 80%;
-}
-
-.dis-percent{
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    font-size: .6em;
-    padding: .2em .5em;
-}
-
-.dis-tag{
-    background-color: green;
-    color: white;
-    font-weight: bold;
-    font-size: .6em;
-    padding: .2em .5em;
-}
-
-.dis-heart{
-    padding: .5em;
-    background-color: white;
-    position: absolute;
-    top: 5%;
-    right: 0;
-}
-
-/* HOVER EFFECT */
-
-.prd-container:hover .first{
-    display: none;
-    
-}
-
-.prd-container:hover .second{
-    display: inline-block;
-} 
