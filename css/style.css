@@ -7,55 +7,46 @@
 
 /* containers */
 main{
-    width: 80%;
+    max-width: 80%;
     margin: auto;
-}
-
-.row{
-    position: relative;
-    height: 500px;
-    width: 100%;
-    margin: 2em 0;
-    
-}
-
-
-
-.prd-container{
-    position: relative;
-    height: 90%;
-  
-
-}
-
-.prd-info{
-    height: 10%;
-    line-height: 100%;
-    
-    
 }
 
 article{
     float: left;
-    height: 100%;
-    width: calc((100%/3)-1rem);
-    margin: 0 1rem;
+    width: calc((100% - 6em) / 3);
+    min-width: 200px;
+    margin: 1em;    
 }
 
 
+
+.card {
+    position: relative;
+    height: 80%;
+}
+
+.tags{
+    width: 100%;
+}
+
+.discount{
+    width: 50%;
+    position: absolute;
+    top: 200px;
+}
 
 
 
 
 /* HOOVER EFFECT */
-.prd-container img {
-    height: 100%;
+.card img {
+    width: 100%;
 }
-.prd-container:hover .first{
+.card:hover .first{
     display: none;
     
 }
-.prd-container:hover .second{
+.card:hover .second{
     display: inline-block;
 }
 .second{
@@ -63,12 +54,9 @@ article{
 }
 
 /* item on image */
-.dis-value{
-    position: absolute;
-    top: 90%;
-}
 
-.dis-percent{
+
+.percent{
     background-color: red;
     color: white;
     font-weight: bold;
@@ -76,7 +64,7 @@ article{
     padding: .2em .5em;
 }
 
-.dis-tag{
+.tag{
     background-color: green;
     color: white;
     font-weight: bold;
@@ -84,7 +72,7 @@ article{
     padding: .2em .5em;
 }
 
-.dis-heart{
+.heart{
     vertical-align: middle;
     text-align: center;
     height: 1.5em;
@@ -96,7 +84,7 @@ article{
     right: 0;
 }
 
-.prd-container:hover .dis-heart{
+.card:hover .heart{
     color: red;
 
 }
@@ -107,18 +95,18 @@ article{
     font-size: smaller;
 }
 
-.prd{
+.card{
     font-weight: bold;
 
 }
 
-span{
+p span{
     display: inline-block;
     margin-right: 1em;
     font-size: smaller;
 }
 
-span.discount {
+span.disPrice {
     color: red;
 }
 
